@@ -13,7 +13,8 @@ class collection{
 		$sql='SELECT * FROM ' .$calledCLass . 'WHERE ID<' .$count;
 		$statement=$database->prepare($sql);
 		$statement->execute();
-	
+		$row=$statement->rowCount();
+		echo 'Number of rows are: ' .$row . '<br>';
 	}
 
 } 
