@@ -7,7 +7,7 @@ $pass = 'adhere54';
 try{
 	$dbh = new PDO($dsn, $user, $pass);
 	$dbh -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	echo 'Connection established';
+	echo 'Connected successfully. <br>';
 }catch(PDOException $e){
-	echo 'connection failed: ' . $e -> getMessage();
+	echo 'connection failed: ' . $e -> getMessage() . '<br>';
 }
