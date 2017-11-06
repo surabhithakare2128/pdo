@@ -26,7 +26,7 @@ public static function getConnect(){
 }
 
 $database=connect::getConnect();
-print_r($database);
+//print_r($database);
 echo '<br>';
 
 ?>
